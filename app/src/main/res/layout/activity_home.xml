@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <Button
+        android:id="@+id/addProject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/myProject"
+        android:onClick="onClickAddProject"
+        android:text="Add New Project" />
+
+    <Button
+        android:id="@+id/listProject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/addProject"
+        android:onClick="onClickListProject"
+        android:text="List Projects" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Welcome" />
+
+    <Button
+        android:id="@+id/myProject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="99dp"
+        android:onClick="onClickMyProjects"
+        android:text="GOTO MY PROJECTS" />
+
+    <Button
+        android:id="@+id/Logout"
+        android:layout_width="match_parent"
+        android:onClick="onClickLogout"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
+        android:text="LOGOUT" />
+
+    <ImageButton
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView"
+        android:onClick="onClickSearchProject"
+        app:srcCompat="?android:attr/actionModeWebSearchDrawable"
+        tools:targetApi="lollipop" />
+
+    <EditText
+        android:id="@+id/searchText"
+        android:layout_width="312dp"
+        android:layout_height="42dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:gravity="center_vertical"
+        android:hint="Search any Project..." />
+
+</RelativeLayout>
